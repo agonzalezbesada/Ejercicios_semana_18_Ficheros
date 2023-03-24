@@ -13,5 +13,8 @@ public class Main {
 
         Ejercicio1 ejercicio1 = new Ejercicio1();
         ejercicio1.escribir(texto1, ruta1);
+
+        Ejercicio2 ejercicio2 = new Ejercicio2();
+        ejercicio2.leer(ruta1);
     }
 }
