@@ -5,8 +5,8 @@ public class Ejercicio2 {
 
     }
 
-    public void leer(String ruta) {
-
+    public boolean leer(String ruta) {
+        boolean check = false;
         FileReader lectura;
         try {
             lectura = new FileReader(ruta);
@@ -17,8 +17,11 @@ public class Ejercicio2 {
                 caracter = lectura.read();
             }
             lectura.close();
+            check = true;
         } catch (IOException e) {
             e.printStackTrace();
+            check = false;
         }
+        return check;
     }
 }
