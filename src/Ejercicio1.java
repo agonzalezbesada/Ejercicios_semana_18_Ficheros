@@ -7,7 +7,7 @@ public class Ejercicio1 {
 
     public boolean escribir(String texto, String ruta) {
         boolean check = false; // Señal que comprueba el proceso
-        FileWriter escritura;
+        FileWriter escritura = null;
         try {
             escritura = new FileWriter(ruta);
             escritura.write(texto);

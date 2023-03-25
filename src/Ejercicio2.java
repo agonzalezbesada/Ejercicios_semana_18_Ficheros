@@ -6,9 +6,10 @@ public class Ejercicio2 {
     }
 
     public StringBuffer leer(String ruta) {
+        StringBuffer cadena = null; // Se borra para que en segundas visitas no exista ya
         boolean check = false; // Señal que comprueba el proceso
         // Creo una cadena dinámica con StringBuffer
-        StringBuffer cadena = new StringBuffer();
+        cadena = new StringBuffer();
         int indice = -1; // Creo un punto de inicio para el índice del StringBuffer
         FileReader lectura;
         try {
@@ -22,7 +23,10 @@ public class Ejercicio2 {
             }
             lectura.close();
             check = true; // Señal de éxito
+            System.out.println("\n"+"Operación realizada con éxito");
+
         } catch (IOException e) {
+            System.out.println("\n"+"Ha habido un error en la operación");
             e.printStackTrace();
             cadena.setLength(0); // Vacía el StringBuffer
             cadena.append(e).toString(); // Iguala el StringBuffer a la cadena de error para ser devuelta
