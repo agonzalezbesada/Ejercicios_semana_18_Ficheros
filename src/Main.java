@@ -68,8 +68,8 @@ public class Main {
                     exito = true;
 
                     String ruta5 = "G:\\Mi unidad\\DAW\\PROG\\EJERCICIOS\\Ejercicios_semana_18_Ficheros\\src\\Ejercicio5.txt";
-                    Ejercicio5<Integer> ejercicio5 = new Ejercicio5<>();
-                    ejercicio5.retornaObjeto(ruta5);
+                    Ejercicio5 objeto = new Ejercicio5();
+                    objeto.retornaObjeto(ruta5);
 
 
 
