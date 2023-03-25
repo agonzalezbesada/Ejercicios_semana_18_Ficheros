@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 public class Ejercicio5<O> {
 
-    private O objeto;
+    public O objeto;
 
     public Ejercicio5() {
 
@@ -26,12 +26,5 @@ public class Ejercicio5<O> {
             e.printStackTrace();
         }
 
-    }
-
-    public void setObjeto(O objeto) {
-        this.objeto = objeto;
-    }
-    public O getObjeto() {
-        return this.objeto;
     }
 }
