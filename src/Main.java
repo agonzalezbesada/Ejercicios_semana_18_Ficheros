@@ -23,15 +23,14 @@ public class Main {
 
                     System.out.println("Introduzca un texto para el ejercicio 1");
                     String texto1 = guardar.nextLine();
-                /* Forma manual de dar la ruta
-                System.out.println("Introduzca una ruta donde guardar ese texto");
-                String ruta1 = guardar.nextLine();
-                 */
+                    /* Forma manual de dar la ruta
+                    System.out.println("Introduzca una ruta donde guardar ese texto");
+                    String ruta1 = guardar.nextLine();
+                     */
                     String ruta1 = "src\\Ejercicio1.txt";
 
                     Ejercicio1 ejercicio1 = new Ejercicio1();
                     ejercicio1.escribir(texto1, ruta1);
-                    // Faltaría demostración de señal
 
                     break;
 
@@ -127,7 +126,8 @@ public class Main {
                     listaObjetos.add(vehiculo6);
 
                     ejercicio6.guardarObjetos(listaObjetos, ruta6, trueFalse6);
-                    // FALTA GENERALIDAD
+                    System.out.println(exito); // Mensaje de confirmación
+
                     break;
 
                 case 7:
