@@ -9,7 +9,7 @@ public class Main {
         int eleccion = 0;
 
         do {
-            System.out.println("\n"+"Que ejercicio desea realizar?"+"\n"+"1. Ejercicio 1"+"\n"+"2. Ejercicio 2"+"\n"+"3. Ejercicio 3"+"\n"+"4. Ejercicio 4"+"\n"+"5. Ejercicio 5"+"\n"+"6. Ejercicio 6"+"\n"+"7. Ejercicio 7");
+            System.out.println("\n"+"Que ejercicio desea realizar?"+"\n"+"1. Ejercicio 1"+"\n"+"2. Ejercicio 2"+"\n"+"3. Ejercicio 3"+"\n"+"4. Ejercicio 4"+"\n"+"5. Ejercicio 5"+"\n"+"6. Ejercicio 6"+"\n"+"7. Ejercicio 7"+"\n"+"0. Salir");
             eleccion = guardar.nextInt();
             guardar.nextLine();
 
@@ -141,34 +141,11 @@ public class Main {
                     ejercicio7.devuelveObjetos(ruta7);
 
                     break;
+
+                default:
+
+                    break;
             }
         } while (eleccion!=0);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
